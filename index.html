@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -17,7 +17,13 @@
       </div>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="site-navigation">Menu</button>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+        >
+          Menu
+        </button>
         <ul id="site-navigation" class="nav-list">
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#specials">Specials</a></li>
@@ -82,8 +88,13 @@
           <img src="img/sunflowers.png" alt="Bright bouquet of sunflowers" />
           <div class="seasonal-copy">
             <h3>Sunflower Sunshine</h3>
-            <p>One featured bouquet: bright sunflowers arranged with fresh greens.</p>
-            <p class="fun-detail">Best for birthdays — only here ‘til October.</p>
+            <p>
+              One featured bouquet: bright sunflowers arranged with fresh
+              greens.
+            </p>
+            <p class="fun-detail">
+              Best for birthdays — only here ‘til October.
+            </p>
           </div>
         </div>
       </section>
@@ -92,12 +103,18 @@
         <h2><span class="accent">Customer</span> Testimonials</h2>
         <div class="testimonials-list">
           <blockquote>
-            <p>“Fran always knows how to make our anniversary special. The bouquet was stunning and lasted for weeks.”</p>
+            <p>
+              “Fran always knows how to make our anniversary special. The
+              bouquet was stunning and lasted for weeks.”
+            </p>
             <footer>- Maria G.</footer>
           </blockquote>
 
           <blockquote>
-            <p>“Friendly service and beautiful arrangements. I love supporting a local shop that cares about the community.”</p>
+            <p>
+              “Friendly service and beautiful arrangements. I love supporting a
+              local shop that cares about the community.”
+            </p>
             <footer>- Jamal R.</footer>
           </blockquote>
         </div>
@@ -146,15 +163,15 @@
 
     <script>
       // Mobile nav toggle for accessibility
-      (function(){
-        var btn = document.querySelector('.nav-toggle');
-        var header = document.querySelector('header');
-        var nav = document.getElementById('site-navigation');
-        if(!btn || !header) return;
-        btn.addEventListener('click', function(){
-          var expanded = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', String(!expanded));
-          header.classList.toggle('nav-open');
+      (function () {
+        var btn = document.querySelector(".nav-toggle");
+        var header = document.querySelector("header");
+        var nav = document.getElementById("site-navigation");
+        if (!btn || !header) return;
+        btn.addEventListener("click", function () {
+          var expanded = this.getAttribute("aria-expanded") === "true";
+          this.setAttribute("aria-expanded", String(!expanded));
+          header.classList.toggle("nav-open");
         });
       })();
     </script>
